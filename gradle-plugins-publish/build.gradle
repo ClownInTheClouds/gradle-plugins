@@ -1,0 +1,48 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+group = "github.sorokin"
+version = '0.1.0'
+
+ext {
+    lombokVersion = "1.18.34"
+}
+
+dependencies {
+    implementation gradleApi()
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+}
+
+gradlePlugin {
+    plugins {
+        sorokinPublishPlugin {
+            id = 'github.sorokin.gradle.plugins.sorokin-publish-plugin'
+            implementationClass = 'github.sorokin.gradle.plugins.GradlePluginPublishPlugin'
+        }
+        sorokinPublishLibrary {
+            id = 'github.sorokin.gradle.plugins.sorokin-publish-library'
+            implementationClass = 'github.sorokin.gradle.plugins.GradleLibraryPublishPlugin'
+        }
+        sorokinPublishBom {
+            id = 'github.sorokin.gradle.plugins.sorokin-publish-bom'
+            implementationClass = 'github.sorokin.gradle.plugins.GradleBomPublishPlugin'
+        }
+    }
+}
+
+publishing {
+    publications {
+        create("plugin", MavenPublication) {
+            from project.components.java
+            groupId = project.group
+            artifactId = project.name
+            version = project.version
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}

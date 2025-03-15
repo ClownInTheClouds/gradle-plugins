@@ -1,0 +1,20 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'github.sorokin.gradle.plugins.sorokin-publish-plugin' version '0.1.0'
+}
+
+group = "github.sorokin"
+version = '0.1.0'
+
+dependencies {
+    implementation gradleApi()
+}
+
+gradlePlugin {
+    plugins {
+        sorokinRepositoryPlugin {
+            id = 'github.sorokin.gradle.plugins.sorokin-repository-plugin'
+            implementationClass = 'github.sorokin.gradle.plugins.GradleRepositoryPlugin'
+        }
+    }
+}
