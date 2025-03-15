@@ -27,3 +27,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/gradle-plugins-publish/.gradle/
+/gradle-plugins-repository/.gradle/
