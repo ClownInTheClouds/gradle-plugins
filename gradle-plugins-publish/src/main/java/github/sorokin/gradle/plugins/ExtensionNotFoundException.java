@@ -1,4 +1,4 @@
-package github.sorokin.gradle.plugins.plugins;
+package github.sorokin.gradle.plugins;
 
 public class ExtensionNotFoundException extends RuntimeException {
     public ExtensionNotFoundException(Class<?> type) {

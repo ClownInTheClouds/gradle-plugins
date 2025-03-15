@@ -1,4 +1,4 @@
-package github.sorokin.gradle.plugins.plugins;
+package github.sorokin.gradle.plugins;
 
 import lombok.Data;
 import org.gradle.api.Action;

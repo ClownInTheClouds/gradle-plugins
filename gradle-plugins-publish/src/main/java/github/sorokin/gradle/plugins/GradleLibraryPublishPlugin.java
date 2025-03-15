@@ -1,12 +1,12 @@
-package github.sorokin.gradle.plugins.plugins;
+package github.sorokin.gradle.plugins;
 
 import org.gradle.api.Project;
 import org.gradle.api.artifacts.dsl.RepositoryHandler;
 
-public class GradlePluginPublishPlugin implements GradlePublishPlugin {
+public class GradleLibraryPublishPlugin implements GradlePublishPlugin {
     @Override
     public void setupPluginExtension(Project project, GradlePublishPluginExtension extension) {
-        extension.setPublicationName("plugin");
+        extension.setPublicationName("library");
         extension.setBuildComponent(project.getComponents().getByName("java"));
         extension.setPublicationGroup(project.getGroup().toString());
         extension.setPublicationArtifactId(project.getName());
