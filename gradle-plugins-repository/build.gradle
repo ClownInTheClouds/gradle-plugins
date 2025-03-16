@@ -3,9 +3,6 @@ plugins {
     id 'github.sorokin.gradle.plugins.sorokin-publish-plugin' version '0.1.0'
 }
 
-group = "github.sorokin"
-version = '0.1.0'
-
 dependencies {
     implementation gradleApi()
 }
