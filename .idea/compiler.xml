@@ -13,6 +13,9 @@
       <module name="gradle-plugins-repository" target="21" />
       <module name="gradle-plugins-repository.main" target="21" />
       <module name="gradle-plugins-repository.test" target="21" />
+      <module name="gradle-plugins-version-catalog" target="21" />
+      <module name="gradle-plugins-version-catalog.main" target="21" />
+      <module name="gradle-plugins-version-catalog.test" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

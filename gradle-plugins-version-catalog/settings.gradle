@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+    }
+}
+
+plugins {
+    id 'github.sorokin.gradle.plugins.sorokin-repository-plugin' version '0.1.0'
+}
+
+rootProject.name = 'gradle-plugins-version-catalog'
+include 'gradle-plugins-version-catalog-bom'
+

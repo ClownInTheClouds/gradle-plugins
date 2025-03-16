@@ -1,0 +1,17 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'github.sorokin.gradle.plugins.sorokin-publish-plugin' version '0.1.0'
+}
+
+dependencies {
+    implementation gradleApi()
+}
+
+gradlePlugin {
+    plugins {
+        sorokinVersionCatalogPlugin {
+            id = 'github.sorokin.gradle.plugins.sorokin-version-catalog-plugin'
+            implementationClass = 'github.sorokin.version.catalog.GradleVersionCatalogPlugin'
+        }
+    }
+}

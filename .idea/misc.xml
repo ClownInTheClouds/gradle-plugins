@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/gradle-plugins-publish" />
     <file type="web" url="file://$PROJECT_DIR$/gradle-plugins-repository" />
+    <file type="web" url="file://$PROJECT_DIR$/gradle-plugins-version-catalog" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

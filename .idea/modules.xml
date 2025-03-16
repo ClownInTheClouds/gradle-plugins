@@ -11,6 +11,10 @@
       <module fileurl="file://$PROJECT_DIR$/gradle-plugins-repository.iml" filepath="$PROJECT_DIR$/gradle-plugins-repository.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle-plugins-repository.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle-plugins-repository.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle-plugins-repository.test.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle-plugins-repository.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gradle-plugins-version-catalog.iml" filepath="$PROJECT_DIR$/gradle-plugins-version-catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gradle-plugins-version-catalog-bom.iml" filepath="$PROJECT_DIR$/gradle-plugins-version-catalog-bom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle-plugins-version-catalog.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle-plugins-version-catalog.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle-plugins-version-catalog.test.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle-plugins-version-catalog.test.iml" />
     </modules>
   </component>
 </project>

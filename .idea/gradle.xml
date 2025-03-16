@@ -21,6 +21,15 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gradle-plugins-version-catalog" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../Programs/Gradle/gradle-8.5" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gradle-plugins-version-catalog" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>

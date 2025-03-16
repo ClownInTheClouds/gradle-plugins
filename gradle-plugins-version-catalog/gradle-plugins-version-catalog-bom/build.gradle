@@ -1,0 +1,18 @@
+plugins {
+    id 'java-platform'
+    id 'github.sorokin.gradle.plugins.sorokin-publish-bom'
+}
+
+javaPlatform {
+    allowDependencies()
+}
+
+ext {
+    lombokVersion = "1.18.34"
+}
+
+dependencies {
+    constraints {
+        api "org.projectlombok:lombok:$lombokVersion"
+    }
+}
